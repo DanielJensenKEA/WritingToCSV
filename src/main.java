@@ -8,6 +8,7 @@ public class main {
         UserInterFace ui = new UserInterFace();
 
         try {
+            //TODO: programmestart & startmenu
             ui.programmeStart();
 
         }catch(Exception e) {

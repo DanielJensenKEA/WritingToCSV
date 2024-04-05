@@ -28,4 +28,7 @@ public class EmployeeGeneration {
     public void setEmployeeRoster(ArrayList<Employee> employeeRoster) {
         this.employeeRoster = employeeRoster;
     }
+
+
 }
+
