@@ -8,9 +8,11 @@ import java.util.ArrayList;
 
 public class Controller {
     private final FileHandler fh;
+    private final EmployeeDataManagement EDM;
     //private final EmployeeGeneration eg;
     public Controller() {
         this.fh = new FileHandler();
+        this.EDM = new EmployeeDataManagement();
         //this.eg = new EmployeeGeneration();
     }
     public void writeToCSV() throws IOException, InterruptedException {
@@ -27,4 +29,8 @@ public class Controller {
     public void loadListOfEmployees() throws FileNotFoundException, InterruptedException {
         fh.loadListOfEmployees();
     }
+    public void addEmployeeDataToList(EmployeeData e) {
+        EDM.addEmployeeDataToList(e);
+    }
+
 }

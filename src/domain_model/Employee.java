@@ -4,11 +4,21 @@ public class Employee {
     private String name;
     private int age;
     private int salary;
+    private EmployeeData employeeData;
 
-    public Employee(String name, int age, int salary) {
+    public Employee(String name, int age, int salary, EmployeeData employeeData) {
         this.name = name;
         this.age = age;
         this.salary = salary;
+        this.employeeData = employeeData;
+    }
+
+    public EmployeeData getEmployeeData() {
+        return employeeData;
+    }
+
+    public void setEmployeeData(EmployeeData employeeData) {
+        this.employeeData = employeeData;
     }
 
     ////////////////////// Getters //////////////////////
